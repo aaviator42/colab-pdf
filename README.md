@@ -1,13 +1,26 @@
 ## Usage 
 
-
-Paste and run this in your colab notebook in the last cell.
+### FOR PDF
+Paste and run this in your colab notebook in the last cell for PDF.
 ```ipython
-!wget -nc https://raw.githubusercontent.com/brpy/colab-pdf/master/colab_pdf.py
+!wget -nc https://github.com/aaviator42/colab-plus/blob/master/colab_pdf.py
 from colab_pdf import colab_pdf
 colab_pdf('pandas-assignment.ipynb')
 ```
 Enter the the full file name as shown above, within quotes. The pdf will be saved on your Google Drive.
+
+### FOR HTML
+Paste and run this in your colab notebook in the last cell for HTML.
+```ipython
+!wget -nc https://github.com/aaviator42/colab-plus/blob/master/colab_html.py
+from colab_html import colab_html
+colab_html('pandas-assignment.ipynb')
+```
+Enter the the full file name as shown above, within quotes. The pdf will be saved on your Google Drive.
+
+
+
+
 
 For better quality plots use:
 ```python
@@ -22,7 +35,7 @@ ___
 The outputs can be long as a lot of commands are run in the background. You can use `%%capture` magic to hide the cell output.
 ```
 %%capture
-!wget -nc https://raw.githubusercontent.com/brpy/colab-pdf/master/colab_pdf.py
+!wget -nc https://github.com/aaviator42/colab-plus/blob/master/colab_pdf.py
 from colab_pdf import colab_pdf
 colab_pdf('pandas-assignment.ipynb')
 ```
@@ -49,5 +62,7 @@ nbconvert and xelatex are not perfect and might fail to convert your file to pdf
 ___
 
 
+Thanks to brpy for original script (PDF only).
 Thanks to Google Colab for helping the community.
 Google Colaboratory is a product of Google.
+
