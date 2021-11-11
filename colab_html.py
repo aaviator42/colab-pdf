@@ -35,7 +35,7 @@ def colab_html(file_name, notebookpath="/content/drive/MyDrive/Colab Notebooks/"
     # Attempt to convert to html and save it in Gdrive home dir using jupyter nbconvert command.
     try:
         get_ipython().system(
-            "jupyter nbconvert --output-dir='$gdrive_home' '$notebookpath''$file_name' --to html --template lab"
+            "jupyter nbconvert --to html --template lab --output-dir='$gdrive_home' '$notebookpath''$file_name'"
         )
     except:
         return "nbconvert error"
