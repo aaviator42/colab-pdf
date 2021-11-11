@@ -1,6 +1,21 @@
 ## Usage 
 
-### FOR PDF
+
+### For HTML
+Paste and run this in your colab notebook in the last cell for HTML.
+```ipython
+!wget -nc https://github.com/aaviator42/colab-plus/blob/master/colab_html.py
+from colab_html import colab_html
+colab_html('pandas-assignment.ipynb')
+```
+Enter the the full file name as shown above, within quotes. The pdf will be saved on your Google Drive.
+
+
+
+### For PDF
+
+ > You can get better results often by generating an HTML file (using above script), and then opening it in your browser and printing to PDF. If that doesn't work well, then try:
+ 
 Paste and run this in your colab notebook in the last cell for PDF.
 ```ipython
 !wget -nc https://github.com/aaviator42/colab-plus/blob/master/colab_pdf.py
@@ -9,14 +24,6 @@ colab_pdf('pandas-assignment.ipynb')
 ```
 Enter the the full file name as shown above, within quotes. The pdf will be saved on your Google Drive.
 
-### FOR HTML
-Paste and run this in your colab notebook in the last cell for HTML.
-```ipython
-!wget -nc https://github.com/aaviator42/colab-plus/blob/master/colab_html.py
-from colab_html import colab_html
-colab_html('pandas-assignment.ipynb')
-```
-Enter the the full file name as shown above, within quotes. The pdf will be saved on your Google Drive.
 
 
 
