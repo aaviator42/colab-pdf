@@ -8,7 +8,7 @@ Paste and run this in your colab notebook in the last cell for HTML.
 from colab_html import colab_html
 colab_html('pandas-assignment.ipynb')
 ```
-Enter the the full file name as shown above, within quotes. The pdf will be saved on your Google Drive.
+Enter the the full file name as shown above, within quotes. The html file will be saved on your Google Drive.
 
 
 
